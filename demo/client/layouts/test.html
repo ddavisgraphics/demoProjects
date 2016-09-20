@@ -1,0 +1,49 @@
+<template name="home">
+  <p>This is the home page of our directory</p>
+</template>
+
+
+<template name="test">
+  <p>
+    This is a test page.
+  </p>
+
+  <a href="/">Back</a>
+</template>
+
+
+<template name="list">
+  <h2> Employee List </h2>
+  <table>
+    <thead>
+      <tr>
+        <th> Name </th>
+        <th> Email </th>
+        <th> Address </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each employee}}
+      <tr>
+        <td>{{> employeeName}}</td>
+        <td>{{> emailTemp}}</td>
+        <td> {{> address}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
+
+
+<template name="employeeName">
+  <div class="name"> {{first_name}} {{last_name}}</div>
+</template>
+
+<template name="emailTemp">
+  <a href="mailto:{{email}}"> {{email}} </a>
+</template>
+
+<template name="address">
+  <div> {{street_address}} </div>
+  <div> {{city}}, {{state}} {{zip}} </div>
+</template>

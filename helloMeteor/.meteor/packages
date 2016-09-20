@@ -1,0 +1,36 @@
+## PRODUCTION PACKAGES
+## =========================================================================================================
+
+meteor-base@1.0.4                # Packages every Meteor app needs to have
+mobile-experience@1.0.4          # Packages for a great mobile UX
+mongo@1.1.10                     # The database Meteor supports right now
+blaze-html-templates@1.0.4       # Compile .html files into Meteor Blaze views
+reactive-var@1.0.10              # Reactive variable for tracker
+jquery                           # Helpful client-side library
+tracker@1.1.0                    # Meteor's client-side reactive programming library
+
+standard-minifier-css@1.1.8      # CSS minifier run for production mode
+standard-minifier-js@1.1.8       # JS minifier run for production mode
+es5-shim@4.6.13                  # ECMAScript 5 compatibility for older browsers.
+ecmascript@0.5.7                 # Enable ECMAScript2015+ syntax in app code
+
+kadira:flow-router               # enables uri routes
+kadira:blaze-layout              # makes it so that only certain areas have to parse
+erasaur:meteor-lodash            # drop in replacement for underscore js adds performance
+
+spiderable                       # makes google searchable
+fastclick                        # on mobile apps it removes the 300ms delay on clicks events
+
+raix:handlebar-helpers           # provides a set of template info to get sessions and other objects
+
+aldeed:collection2               # database stuff schemes
+aldeed:autoform                  # database stuff automatic form / database integration
+
+accounts-ui                      # login stuff
+accounts-password                # login stuff
+
+msavin:jetsetter                 # dev only allows you to session stuff in the browser
+zimme:active-route               # lets you add items to the view based on if a certain route is active
+gwendall:auth-client-callbacks   # lets the user be offline and still use the application
+
+fourseven:scss                   # render css from scss

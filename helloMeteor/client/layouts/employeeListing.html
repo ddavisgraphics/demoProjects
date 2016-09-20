@@ -1,0 +1,23 @@
+<template name="employeeListing">
+  <h2> Employee Listing </h2>
+  <table>
+    <thead>
+      <tr>
+        <th> Name </th>
+        <th> Email </th>
+        <th> Position </th>
+        <th> Delete </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each employee}}
+        <tr>
+          <td> {{> employeeName}} </td>
+          <td> {{> employeeEmail}} </td>
+          <td> {{position}} </td>
+          <td> <a href="#delete" class="deleteEmployee" data-id="{{_id}}"> X </a> </td> 
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

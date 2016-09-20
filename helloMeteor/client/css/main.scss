@@ -1,0 +1,22 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'bitters/base';
+
+html, body { margin:0; padding:0;}
+
+header {
+  padding:20px;
+  background:#ccc;
+  @include span-columns(12);
+
+  h1 {
+    @include span-columns(6);
+    font-size:24px;
+  }
+
+  #login-buttons {
+    @include span-columns(6);
+    @include omega();
+    text-align:right;
+  }
+}

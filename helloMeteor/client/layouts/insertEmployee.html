@@ -1,0 +1,31 @@
+<template name="insertEmployee">
+  <h2> New Employee </h2>
+  <form action="#NewEmployee" class="newEmployee">
+      <label for="employee_number"> Employee #</label>
+      <input type="text" name="employee_number" id="employee_number" /> <br><br>
+
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" id="first_name" /><br><br>
+
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" id="last_name" /><br><br>
+
+      <label for="email"> Email </label>
+      <input type="email" name="email" id="email" /><br><br>
+
+      <label for="gender"> Gender </label>
+      <select name="gender" id="gender">
+        <option value=""> Selct One </option>
+        <option value="male"> Male </option>
+        <option value="female"> Female </option>
+        <option value="other"> Other </option>
+      </select><br><br>
+
+      <input type="hidden" name="company" id="company" value="Awesome Tech" />
+
+      <label for="position"> Position </label>
+      <input type="text" name="position" id="position"/><br><br>
+
+      <input type="submit" value="Submit" id="createNewEmployee">
+  </form>
+</template>
